@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.employee.Utility.Reporting"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.employee.Testclass.TC_003_Post_Create_Employee"/>
+      <class name="com.employee.Testclass.TC_003_PUT_Existing_Employee"/>
+      <class name="com.employee.Testclass.TC_002_Get_Single_Employee_Record"/>
+      <class name="com.employee.Testclass.TC_004_DELETE_Existing_employee"/>
+      <class name="com.employee.Testclass.TC_001_Get_All_Employee"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
